@@ -12,7 +12,7 @@ func pythagore(sideA:Double, sideB: Double) -> Double {
     return sqrt((sideA * sideA) + (sideB * sideB))
 }
 
-func demandeValeurs(checkDivideBy:Double) -> Array<Int> {
+func demandeValeurs(checkDivideBy:Double) {
     var nbValues:Int = 0
     var value:Double = 0
     var nbValuesDivByInt:Int = 0
@@ -26,7 +26,7 @@ func demandeValeurs(checkDivideBy:Double) -> Array<Int> {
             }
         }
     } while (value != 0)
-    return [nbValues, nbValuesDivByInt]
+    print("Vous avez entré \(nbValues) valeurs dont \(nbValuesDivByInt) divisibles par \(checkDivideBy)")
 }
 
 func multiplication(multipleLevel:Int) {

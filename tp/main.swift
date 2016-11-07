@@ -180,8 +180,7 @@ func exercise_TP2_2() {
     let checkDivideBy:Double
     print("Par quel nombre voulez-vous vérifier la division ?")
     checkDivideBy = readDouble()
-    let nbValues = demandeValeurs(checkDivideBy: checkDivideBy)
-    print("Vous avez entré \(nbValues[0]) valeurs dont \(nbValues[1]) divisibles par \(checkDivideBy)")
+    demandeValeurs(checkDivideBy: checkDivideBy)
 }
 
 func exercise_TP2_3() {

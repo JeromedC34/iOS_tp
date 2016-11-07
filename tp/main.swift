@@ -162,5 +162,41 @@ func exercice8IA() {
     print("Le joueur \(currentPlayer) a perdu.")
 }
 
+func exercise_TP2_1() {
+    var mySideA:Double
+    var mySideB:Double
+    repeat {
+        print("Saisir la longueur du premier côté :")
+        mySideA = readDouble()
+    } while (mySideA <= 0)
+    repeat {
+        print("Saisir la longueur du deuxième côté :")
+        mySideB = readDouble()
+    } while (mySideB <= 0)
+    print("La longueur de l'hypothénuse est de \(pythagore(sideA: mySideA, sideB: mySideB))")
+}
+
+func exercise_TP2_2() {
+    let checkDivideBy:Double
+    print("Par quel nombre voulez-vous vérifier la division ?")
+    checkDivideBy = readDouble()
+    let nbValues = demandeValeurs(checkDivideBy: checkDivideBy)
+    print("Vous avez entré \(nbValues[0]) valeurs dont \(nbValues[1]) divisibles par \(checkDivideBy)")
+}
+
+func exercise_TP2_3() {
+    let multipleLevel:Int
+    print("Niveau de la table de multiplication ?")
+    multipleLevel = readInt()
+    multiplication(multipleLevel: multipleLevel)
+}
+
+func exercise_TP2_4() {
+    let nbToApproach:Int
+    print("Entier à approcher ?")
+    nbToApproach = readInt()
+    checkNearestNumber(nb: nbToApproach)
+}
+
 //Commencez vos instructions en dessous de cette ligne
-exercice8IA()
+exercise_TP2_4()

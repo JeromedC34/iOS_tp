@@ -42,6 +42,6 @@ func readDouble() -> Double {
 }
 
 func generateRandomNumber(min:Int, max:Int) -> Int {
-    let range = max-min + 1
+    let range = max - min + 1
     return Int(arc4random_uniform(UInt32(range))) + min
 }
